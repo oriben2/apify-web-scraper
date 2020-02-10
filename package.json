@@ -1,0 +1,45 @@
+{
+  "name": "actor-web-scraper",
+  "version": "1.0.0",
+  "description": "Crawl web pages using Apify, headless Chrome and Puppeteer",
+  "main": "src/main.js",
+  "dependencies": {
+    "@apify/scraper-tools": "^0.1.9",
+    "apify": "^0.17.0",
+    "content-type": "^1.0.4",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "@apify/eslint-config": "^0.0.3",
+    "@types/puppeteer": "^1.20.3",
+    "@types/underscore": "^1.9.4",
+    "chai": "^4.2.0",
+    "eslint": "^6.7.1",
+    "markdown-toc": "^1.2.0",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "sinon": "^7.1.1"
+  },
+  "scripts": {
+    "start": "node main.js",
+    "build-toc": "./node_modules/.bin/markdown-toc README.md -i",
+    "test": "nyc --reporter=html --reporter=text mocha --timeout 60000 --recursive",
+    "prepare": "npm run build-toc",
+    "lint": "eslint src test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apifytech/actor-scraper"
+  },
+  "author": {
+    "name": "Apify Technologies",
+    "email": "support@apify.com",
+    "url": "https://apify.com"
+  },
+  "contributors": [
+    "Marek Trunkat <marek@apify.com>",
+    "Ondra Urban <ondra@apify.com>"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/apifytech/actor-scraper"
+}
