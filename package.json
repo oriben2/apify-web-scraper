@@ -7,7 +7,7 @@
     "@apify/scraper-tools": "^0.1.9",
     "apify": "^0.17.0",
     "content-type": "^1.0.4",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "@apify/eslint-config": "^0.0.3",
